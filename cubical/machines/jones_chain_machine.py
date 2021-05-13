@@ -326,7 +326,7 @@ class JonesChain(MasterMachine):
         gh = np.empty_like(gains)
         np.conj(gains.transpose(0, 1, 2, 3, 5, 4), gh)
 
-        return gains, gh, fc
+        return gains, gh, fc0
 
 
     #@profile
